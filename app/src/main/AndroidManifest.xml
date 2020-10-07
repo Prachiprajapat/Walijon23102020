@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iwtechnocrat.walijon">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.iwtechnocrat.walijon.Act_Test"></activity>
+        <activity android:name="com.iwtechnocrat.walijon.Act_Courses" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_Classes" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_PremiumUserList" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_UserList" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_Signup" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_LoginActivity" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_AdminHome" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_Login" />
+        <activity android:name="com.iwtechnocrat.walijon.Act_SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

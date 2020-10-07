@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DashBoardActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            tools:context=".DashBoardActivity">
+
+
+            <LinearLayout
+                android:id="@+id/linear11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:elevation="8dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                        >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/dark_blue1"
+                            android:padding="5dp"
+                            android:id="@+id/userlay">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:text="User"
+                                android:padding="2dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="2dp"
+                                android:gravity="center"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/white"
+                                android:text="The list of all registered users, Details, payment status, active, inactive users details.">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                      >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:id="@+id/premium_userlay"
+                            android:background="@color/light_blue1"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:padding="2dp"
+                                android:text="Premium users"
+
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The list of all paid users, invoices, purchased courses details, payment status, Add/View comments or message to user."
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="normal">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroundborder">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:id="@+id/classeslay"
+                            android:background="@color/dark_blue1"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Subjects"
+                                android:layout_marginTop="5dp"
+
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:padding="2dp"
+                                android:textStyle="bold">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add/View/Edit name and details of classes, List of all classes will be showing here, it all be editable."
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="normal">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroundborder">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/courses_lay"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:background="@color/light_blue1"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Courses"
+                                android:padding="2dp"
+                                android:layout_marginTop="5dp"
+
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"></TextView>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The list of all registered users, Details, payment status, active, inactive users details."
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textStyle="normal">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroundborder">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/testlay"
+                            android:background="@color/dark_blue1"
+                            android:padding="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Test"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"
+
+                                android:padding="2dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="The list of all registered users, Details, payment status, active, inactive users details."
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:textStyle="normal">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+                        android:elevation="8dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/backgroundborder">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/testlay11"
+                                android:background="@color/light_blue1"
+                                android:padding="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Images"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="The list of all registered users, Details, payment status, active, inactive users details."
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:textStyle="normal">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
