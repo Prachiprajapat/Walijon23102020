@@ -49,17 +49,17 @@
             android:layout_marginLeft="5dp">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:padding="2dp"
-            android:fontFamily="@font/poppins"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@+id/lay"
-            android:id="@+id/tv_product"
-            android:layout_marginTop="10dp"
-            android:text="Milk"/>
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:padding="2dp"
+                android:text="Milk"
+                android:textSize="12dp" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -41,14 +41,15 @@
                 android:weightSum="1"
                 android:padding="2dp"
                 android:layout_gravity="center_vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight=".2"
-                    android:text="Wishlist"
-                    android:textSize="14sp"
                     android:padding="2dp"
-                    android:layout_gravity="center_vertical">
+                    android:text="Wishlist"
+                    android:textSize="14sp">
 
                 </TextView>
 
@@ -112,7 +113,6 @@
                 android:padding="2dp"
                 android:textColor="@color/black"
                 android:textStyle="normal"
-                android:fontFamily="@font/poppins"
                 android:text="Your wishlist is empaty">
 
             </TextView>
@@ -127,7 +127,6 @@
                 android:textSize="12sp"
                 android:padding="2dp"
                 android:textStyle="normal"
-                android:fontFamily="@font/poppins"
                 android:text="@string/wishlist">
 
             </TextView>

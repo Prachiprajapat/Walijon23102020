@@ -118,7 +118,7 @@
                                 android:layout_height="20dp"
                                 android:layout_marginRight="20dp"
                                 android:layout_marginTop="5dp"
-
+                               android:src="@drawable/ic_pin"
                                 android:layout_centerVertical="true"
                                 android:layout_toLeftOf="@+id/cart"
                                 android:textColor="@color/white"
@@ -157,6 +157,7 @@
                                 android:layout_marginRight="20dp"
                                 android:layout_centerVertical="true"
                                 android:text="Waljon App"
+                               android:src="@drawable/ic_heart"
                                 android:layout_marginLeft="1dp"
                                 android:layout_gravity="center_vertical">
 
@@ -170,10 +171,10 @@
                                 android:layout_marginRight="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_centerVertical="true"
-                                android:src="@drawable/ic_baseline_add_shopping_cart_24"
                                 android:layout_alignParentEnd="true"
                                 android:textColor="@color/white"
                                 android:text="Waljon App"
+                                android:src="@drawable/ic_shoppingbag"
                                 android:layout_marginLeft="1dp"
                                 android:layout_gravity="center_vertical">
 

@@ -20,9 +20,8 @@
         android:background="@color/white"
         android:layout_gravity="bottom"
         app:itemTextColor="@color/dark_blue1"
-        android:theme="@style/Widget.BottomNavigationView14"
         app:itemIconTint="@color/grey"
-        app:menu="@menu/nav_itemss" />
+        app:menu="@menu/nav_item" />
 
 
 

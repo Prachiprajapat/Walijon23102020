@@ -28,6 +28,7 @@ import com.iwtechnocrat.waljon.Activities.Act_Wishlist;
 import com.iwtechnocrat.waljon.Fragment.HommeeFragment;
 import com.iwtechnocrat.waljon.Fragment.Profile_Frag;
 import com.iwtechnocrat.waljon.Fragment.Categories_Frag;
+import com.iwtechnocrat.waljon.GoogleMap.SearchCity;
 
 public class Act_Home extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener  {
 
@@ -35,7 +36,7 @@ public class Act_Home extends AppCompatActivity implements BottomNavigationView.
     Toolbar  toolbar;
     SearchView mSearchView;
     BottomNavigationView navigation;
-    ImageView search,wishlist;
+    ImageView search,wishlist,map;
 
 
     @Override
@@ -51,9 +52,10 @@ public class Act_Home extends AppCompatActivity implements BottomNavigationView.
         wishlist = findViewById(R.id.wishlist);
         navigation.setOnNavigationItemSelectedListener(this);
         search = findViewById(R.id.search);
+        map = findViewById(R.id.map);
 
         Menu a = navigation.getMenu();
-        MenuItem b = a.findItem(R.id.home);
+        MenuItem b = a.findItem(R.id.nav_home);
         navigation.setItemIconTintList(null);
        // BVMenu.setItemIconTintList(null);
         b.setIcon(R.drawable.wlogo11);
@@ -76,7 +78,13 @@ public class Act_Home extends AppCompatActivity implements BottomNavigationView.
             }
         });
 
-
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SearchCity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -91,7 +99,7 @@ public class Act_Home extends AppCompatActivity implements BottomNavigationView.
             case R.id.nav_profile:
                 fragment = new Profile_Frag();
                 break;
-   case R.id.categories:
+   case R.id.nav_categories:
                 fragment = new Categories_Frag();
                 break;
 
@@ -141,16 +149,7 @@ public class Act_Home extends AppCompatActivity implements BottomNavigationView.
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
 
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_for_home, menu);
-
-
-
-        return true;
-    }
 
 
 
