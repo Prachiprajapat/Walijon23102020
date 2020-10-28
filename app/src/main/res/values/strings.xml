@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Walijon</string>
+    <string name="app_name">Waljon</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="login">Please Join Us For Best Nursing Practice</string>
+    <string name="search">Search Your Products here...</string>
+    <string name="wishlist">Save items that you like in your wishlist Review them anytime and easily move them to the bag</string>
 </resources>

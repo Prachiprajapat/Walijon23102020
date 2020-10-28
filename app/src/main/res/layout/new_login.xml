@@ -15,7 +15,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:background="@drawable/login12">
+                android:background="@drawable/women">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_marginTop="220dp"
                 android:padding="10dp"
                 android:background="@drawable/circle_background"
-                android:src="@drawable/nursing_final"
+
                 android:id="@+id/image">
 
             </de.hdodenhof.circleimageview.CircleImageView>

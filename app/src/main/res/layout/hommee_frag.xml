@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/input">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:isScrollContainer="true"
+                 >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sliderlay"
+                android:background="@color/white"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/SliderDots"
+                    android:layout_below="@+id/viewPager"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:layout_height="20dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sliderlay"
+                android:orientation="vertical"
+                android:id="@+id/lay11"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:padding="5dp"
+                    android:text="Best Seller"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/cosmatics"
+                    android:scaleType="fitXY"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lay11"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Deals"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginLeft="10dp"
+                   >
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/jwelleryone"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lay11"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Arrival"
+                        android:padding="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wlogo11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lay11"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop By Brand"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                       android:id="@+id/recycle_shopbybrand"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+</ScrollView>
+</RelativeLayout>
